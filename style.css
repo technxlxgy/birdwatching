@@ -1,0 +1,190 @@
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #a9a9a9;
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+p, input, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+header {
+  width: 100%; overflow: hidden;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+}
+
+body > div {
+  background-color: rgb(13, 220, 13);
+}
+
+main, header, nav, article, aside, footer, section {
+  background-color: rgba(0,255,0,0.5);
+  padding: 1%;
+}
+
+h1 {
+  flex: 5;
+  text-transform: uppercase;
+}
+
+header img {
+  float: left;
+  height: 60px;
+}
+
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a, nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+/* || main layout */
+
+content {
+  display: flex;
+  background-color: rgb(13, 220, 13);
+  padding: 1%;
+  width: 100%
+}
+
+article, section {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 1%;
+  padding: 5%;
+  background-color: rgba(0,255,0,0.5);
+}
+
+aside a {
+  display: flex;
+  float: left;
+  width: 50%;
+}
+
+aside img {
+  max-width: 100%;
+  margin-bottom: 3px;
+}
+
+footer {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  height: auto;
+  width: 100%;
+}
+
+/* || meow */
+
+.welcome {
+  flex-basis: 200px;
+  width: 50%;
+  float: left;
+  margin-right: 5px;
+}
+
+@media (max-width: 1000px) {
+  content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    margin-top: 1%;
+    margin-left: 0%;
+  }
+
+  .photos div {
+    width: fit-content;
+  }
+
+  .photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 812px) and (max-height: 375px) {
+  
+}
